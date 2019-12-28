@@ -1,0 +1,404 @@
+/*Responsive*/
+
+@media screen and (max-width: 1200px)  {
+  header {
+    nav {
+      ul {
+        a {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  #home {
+    .home-wrap {
+      padding-left: 50px;
+    }
+  }
+  .about {
+    .about-wrap {
+      padding: 0 20px;
+      .laptop {
+        width: 48%;
+        margin-right: 50px;
+        padding-top: 60px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .about-text {
+        width: 45%;
+      }
+    }
+  }
+  .services {
+    padding: 30px 20px 30px 20px;
+    .services-block .development,
+    .services-block .design {
+      width: 47%;
+      padding: 20px;
+    }
+    .services-block  li {
+      font-size: 22px;
+    }
+  }
+  .portfolio {
+    .portfolio-wrap {
+      .portfolio-info {
+        margin-bottom: 0;
+      }
+      .portfolio-block {
+        padding: 30px 20px 0px 20px;
+        .work {
+          width: 33%;
+          height: 220px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .process {
+    padding: 30px 20px;
+    .process-wrap {
+      .process__item,
+      .process__item:hover {
+        width: 33%;
+      }
+    }
+  }
+  .technologies {
+
+    .technologies-slider {
+      width: 85%;
+    }
+  }
+  .contacts {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    #modal {
+      .modal-content {
+        .contact-btn {
+          display: block;
+        }
+      }
+    }
+    .contact-btn {
+      display: none;
+    }
+    .top-menu {
+      display: none;
+    }
+    .burger-btn {
+      display: block;
+    }
+    nav {
+      ul {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  #home {
+    h1 {
+      font-size: 55px;
+      line-height: 70px;
+    }
+  }
+  .services {
+    .services-block {
+      h4 {
+        font-size: 40px;
+      }
+    }
+  }
+  #nav-toggle {
+    display: block;
+  }
+  header nav ul{
+    flex-direction: column;
+  }
+  .process {
+    .process-wrap {
+      .process__item {
+        height: auto;
+
+        //h5.process__item__title {
+        //  span {
+        //    display: block;
+        //  }
+        //  span:before {
+        //    display: none;
+        //  }
+        //}
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  #home {
+    h1 {
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  .about {
+    padding-bottom: 50px;
+    .about-wrap {
+      justify-content: center;
+      .laptop {
+        width: 75%;
+      }
+      .about-text {
+        width: 100%;
+        padding-top: 50px;
+      }
+    }
+  }
+  .services {
+    .services-block {
+      .development,  .design {
+        height: auto;
+      }
+      h4 {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+      ul {
+        li {
+          margin-bottom: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    .portfolio-wrap {
+
+      .portfolio-block {
+        padding: 10px 20px;
+        .work {
+          width: 48%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .process {
+    .process-wrap {
+      .process__item, .process__item:hover {
+        padding: 20px;
+        height: auto;
+      }
+    }
+  }
+  footer {
+    .footer-wrap {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    margin-bottom: 0;
+    #modal {
+      .modal-content {
+        width: 95%;
+      }
+    }
+  }
+
+  #home {
+    background: url(../img/home-mob.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //padding-bottom: 125px;
+
+
+    h1 {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 42px;
+    }
+    .home-wrap {
+      padding: 0 12px 0 16px;
+    }
+  }
+  .arrow-scroll {
+    bottom: 55px;
+  }
+
+  .about {
+    .about-wrap {
+      .laptop {
+        height: auto;
+      }
+      .about-text {
+        padding-top: 15px;
+        h3 {
+          font-size: 30px;
+          line-height: 35px;
+          text-align: center;
+          margin-bottom: 17px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .services {
+    padding-bottom: 0;
+
+    .services-block {
+
+      .development, .design {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .portfolio {
+    padding-top: 35px;
+    .portfolio-wrap {
+      .portfolio-info {
+        button {
+          font-size: 12px;
+        }
+        button:last-child {
+          margin-right: 0;
+        }
+      }
+      .portfolio-block {
+        .work {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .process {
+    .process-wrap {
+      .process__item, .process__item:hover {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .about-text h3,
+  .services h3,
+  .portfolio h3,
+  .process h3,
+  .technologies h3,
+  .contacts-form h3 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  .technologies {
+    .technologies-slider {
+      width: 80%;
+    }
+  }
+
+  .contacts {
+    .contacts-form {
+      .inputs-group {
+        justify-content: center;
+
+        input {
+          width: 100%;
+          border-radius: 0;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .footer-wrap {
+      margin-bottom: 20px;
+      .footer-logo {
+        margin-bottom: 30px;
+      }
+      .contacts-info {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        display: block;
+
+        a {
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .email {
+          margin-left: 0;
+        }
+
+        .tel, .email {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .contact-btn  {
+    margin: 0 auto;
+    display: block;
+  }
+  .hidden-btn {
+    position: absolute;
+    bottom: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  #home {
+
+    h1 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+  .contacts {
+    .contacts-form {
+      h3 {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+  }
+}
